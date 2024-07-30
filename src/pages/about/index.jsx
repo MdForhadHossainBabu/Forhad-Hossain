@@ -8,7 +8,7 @@ const About = () => {
      <Helmet>
        <title>Forhad Hossain | About me</title>
      </Helmet>
-     <ScrollArea className="h-[90vh] py-4 lg:py-6">
+     <ScrollArea className="h-[90vh] my-4 lg:py-6">
        <Accordion type="single" collapsible className="lg:w-1/2 mx-auto">
          <AccordionItem value="item-1">
            <AccordionTrigger>

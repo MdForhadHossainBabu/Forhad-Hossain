@@ -7,15 +7,15 @@ import banner from "../../assets/forhadh-removebg-preview.png"
 
 const Home = () => {
   return (
-    <ScrollArea className=" flex flex-col items-center justify-center md:my-20  h-auto">
+    <ScrollArea className=" flex flex-col items-center justify-center md:my-20  h-full">
       <Helmet>
         <title>Forhad Hossain | React Js Front-end Developer</title>
       </Helmet>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-300">
-        <div className="flex-1 md:hidden flex lg:pt-8">
+        <div className="flex-1 md:hidden lg:pt-8">
           <div>
             <img
-              className=" items-center flex flex-col justify-center mx-auto rounded-full"
+              className="w-8/12 mx-auto rounded-full"
               src={banner}
               alt="image"
             />
