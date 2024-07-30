@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Select,
   SelectContent,
@@ -18,7 +19,7 @@ const Contact = () => {
        <title>Forhad Hossain | Contact me</title>
      </Helmet>
 
-     <div className="pt-4 md:pt-6 transition-all duration-300 w-full">
+     <ScrollArea className="pt-4 h-auto md:pt-6 transition-all duration-300 w-full">
        <Tabs defaultValue="contact" className="w-full lg:flex">
          <TabsList className="lg:w-3/12">
            <TabsTrigger
@@ -100,7 +101,7 @@ const Contact = () => {
            </h1>
          </TabsContent>
        </Tabs>
-     </div>
+     </ScrollArea>
    </>
  );
 };

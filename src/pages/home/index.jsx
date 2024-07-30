@@ -2,10 +2,12 @@ import { FaDownload, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react
 import { Button } from '@/components/ui/button';
 import { Typewriter } from 'react-simple-typewriter';
 import { Helmet } from 'react-helmet-async';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import banner from "../../assets/forhadh-removebg-preview.png"
 
 const Home = () => {
   return (
-    <div className=" flex flex-col items-center justify-center md:my-20">
+    <ScrollArea className=" flex flex-col items-center justify-center md:my-20  h-auto">
       <Helmet>
         <title>Forhad Hossain | React Js Front-end Developer</title>
       </Helmet>
@@ -14,7 +16,7 @@ const Home = () => {
           <div>
             <img
               className=" items-center flex flex-col justify-center mx-auto rounded-full"
-              src="../../../public/d.JPG"
+              src={banner}
               alt="image"
             />
           </div>
@@ -25,8 +27,8 @@ const Home = () => {
           </h1>
           <br />
           <h1 className="xl:text-[2.8rem] lg:text-4xl text-3xl font-bold lg:tracking-tighter xl:tracking-wider bg-gradient-to-r from-rose-500 via-purple-700 to-blue-500 text-transparent inline-block bg-clip-text uppercase items-center">
-            <span className='flex items-center gap-3'>
-            Forhad Hossain <span className='hidden md:flex'> Babu</span>
+            <span className="flex items-center gap-3">
+              Forhad Hossain <span className="hidden md:flex"> Babu</span>
             </span>
           </h1>
           <div className=" py-2 flex items-center lg:py-6">
@@ -91,16 +93,16 @@ const Home = () => {
           </div>
         </div>
         <div className="flex-1 hidden md:flex ">
-          <div>
+          <div className='w-3/4 mx-auto'>
             <img
-              className="w-9/12 items-center flex flex-col justify-center mx-auto border rounded-full"
-              src="../../../public/d.JPG"
+              className="w-full items-center flex flex-col justify-center mx-auto rounded-full"
+              src={banner}
               alt="image"
             />
           </div>
         </div>
       </div>
-    </div>
+    </ScrollArea>
   );
 };
 
